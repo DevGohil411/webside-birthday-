@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    sans-serif;
+  background-color: rgb(2, 6, 23);
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.touch-target {
+  min-width: 44px;
+  min-height: 44px;
+}
+
+.backdrop-blur-dream {
+  backdrop-filter: blur(20px);
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+@keyframes floatingParticle {
+  0% {
+    transform: translate3d(0, 0, 0) scale(0.8);
+    opacity: 0;
+  }
+  15% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate3d(20px, -160px, 0) scale(1.2);
+    opacity: 0;
+  }
+}
+
+@keyframes pulse {
+  0% {
+    opacity: 0.2;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(1.1);
+  }
+}
+
+@keyframes sectionFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes music-bar-bounce {
+  0%,
+  100% {
+    transform: scaleY(0.4);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+}
+
+.music-visualizer {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 16px;
+}
+
+.music-bar {
+  width: 3px;
+  border-radius: 999px;
+  background: rgb(248 250 252);
+  opacity: 0.5;
+}
+
+.music-bar.playing {
+  animation: music-bar-bounce 0.8s ease-in-out infinite;
+}
+
+.music-bar:nth-child(2).playing {
+  animation-delay: 0.1s;
+}
+
+.music-bar:nth-child(3).playing {
+  animation-delay: 0.2s;
+}
+
+.music-bar:nth-child(4).playing {
+  animation-delay: 0.3s;
+}
+
+.floating-particle {
+  position: absolute;
+  display: block;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.35);
+  animation-name: floatingParticle;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+.section-wrapper {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.section-wrapper.section-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.fade-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: sectionFadeIn 0.7s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.typewriter {
+  border-right: 2px solid rgba(255, 255, 255, 0.5);
+  white-space: pre-wrap;
+  overflow: hidden;
+  min-height: 1.5em;
+  animation: blinkCaret 1s step-end infinite;
+}
+
+.typewriter:last-child {
+  margin-bottom: 0;
+}
+
+@keyframes blinkCaret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.shooting-star {
+  position: absolute;
+  width: 160px;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.7), transparent);
+  transform: rotate(-15deg);
+  animation: shoot 1.5s ease-in-out forwards;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes shoot {
+  0% {
+    opacity: 0;
+    transform: translateX(-10%) translateY(0) rotate(-15deg);
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(120vw) translateY(-20vh) rotate(-15deg);
+  }
+}
+
+@keyframes heartBurst {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -10px) scale(0.5);
+  }
+  30% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -140px) scale(1.2);
+  }
+}
+
+.heart-burst {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background: radial-gradient(circle, #ff85a2 0%, #ff2a64 70%, transparent 100%);
+  border-radius: 999px;
+  opacity: 0;
+  animation: heartBurst 1.2s ease-out forwards;
+}
+
+.envelope {
+  position: absolute;
+  inset: 0;
+  border-radius: 24px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  pointer-events: none;
+  opacity: 0.3;
+  transition: transform 0.6s ease;
+}
+
+.envelope::before,
+.envelope::after {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border-radius: 20px;
+  border: 1px dashed rgba(255, 255, 255, 0.3);
+}
+
+.envelope::after {
+  inset: 20px;
+}
+
+.envelope-open {
+  transform: translateY(-6px) rotateX(6deg);
+  opacity: 0.6;
+}
+
