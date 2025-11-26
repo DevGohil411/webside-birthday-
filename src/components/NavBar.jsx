@@ -34,7 +34,7 @@ const NavBar = () => {
           <p className="text-xs uppercase tracking-[0.4em] text-blush-200">
             26 laps around the sun
           </p>
-          <h1 className="text-lg font-semibold text-white">Tarun × You</h1>
+          <h1 className="text-lg font-semibold text-white">Rishi × You</h1>
         </div>
         <div className="flex flex-1 items-center justify-end gap-3 md:flex-none">
           <div className="w-full min-w-[200px] max-w-[260px] flex-1 md:w-auto">

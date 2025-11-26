@@ -1,4 +1,4 @@
-import Landing from './components/Landing.jsx';
+﻿import Landing from './components/Landing.jsx';
 import SectionHeading from './components/SectionHeading.jsx';
 import MemoriesGallery from './components/MemoriesGallery.jsx';
 import ReasonsSection from './components/ReasonsSection.jsx';
@@ -18,7 +18,7 @@ const memoryEntries = [
     title: 'Marine Drive spark',
     description:
       'You spilled half your filter coffee laughing at my terrible opener, and the city sunrise applauded.',
-    location: 'Marine Drive · July 2018',
+    location: 'Marine Drive Â· July 2018',
     year: '2018',
   },
   {
@@ -26,7 +26,7 @@ const memoryEntries = [
     title: 'Bedroom jam session',
     description:
       'You harmonised to my chaotic guitar riffs, then we high-fived the mic when we finally nailed it.',
-    location: 'Bandra flat · Oct 2019',
+    location: 'Bandra flat Â· Oct 2019',
     year: '2019',
   },
   {
@@ -34,7 +34,7 @@ const memoryEntries = [
     title: 'Monsoon beach dare',
     description:
       'You dragged me into the tide in full jeans, and we slow-danced with thunder cheering us on.',
-    location: 'Candolim · Aug 2020',
+    location: 'Candolim Â· Aug 2020',
     year: '2020',
   },
   {
@@ -42,7 +42,7 @@ const memoryEntries = [
     title: 'Midnight rummy heist',
     description:
       'You reverse-swept the card table at 2 a.m., did the victory shimmy, and stole the last jalebi.',
-    location: "Friends' flat · Jan 2021",
+    location: "Friends' flat Â· Jan 2021",
     year: '2021',
   },
   {
@@ -50,7 +50,7 @@ const memoryEntries = [
     title: 'Firefly rooftop hush',
     description:
       'You matched each flicker to a wish and whispered, "Keep this night in your pocket."',
-    location: 'Nagpur terrace · Jun 2022',
+    location: 'Nagpur terrace Â· Jun 2022',
     year: '2022',
   },
   {
@@ -58,7 +58,7 @@ const memoryEntries = [
     title: 'Pawna hammock siesta',
     description:
       'We swayed with cicadas, swapped playlists, and decided naps count as dates.',
-    location: 'Pawna Lake · Mar 2023',
+    location: 'Pawna Lake Â· Mar 2023',
     year: '2023',
   },
   {
@@ -66,7 +66,7 @@ const memoryEntries = [
     title: 'Boat ride polaroids',
     description:
       'You balanced on the edge to get the perfect shot, hair wild, grin wilder, film roll priceless.',
-    location: 'Alleppey backwaters · Feb 2024',
+    location: 'Alleppey backwaters Â· Feb 2024',
     year: '2024',
   },
 ];
@@ -81,13 +81,13 @@ const reasons = [
     icon: 'heart',
     title: 'You read every micro-expression',
     description:
-      'Before I speak, you already know if I need chai, a hug, or both—and you always deliver.',
+      'Before I speak, you already know if I need chai, a hug, or bothâ€”and you always deliver.',
   },
   {
     icon: 'smile',
     title: 'Your laugh derails bad days',
     description:
-      'The Sara cackle that shows up on 1.5× speed voice notes still makes strangers grin.',
+      'The Sara cackle that shows up on 1.5Ã— speed voice notes still makes strangers grin.',
   },
   {
     icon: 'music',
@@ -111,13 +111,13 @@ const reasons = [
     icon: 'smile',
     title: 'Sticker-text queen',
     description:
-      'Your meme timing is undefeated—especially the dancing avocado whenever I say “I’m stressed.”',
+      'Your meme timing is undefeatedâ€”especially the dancing avocado whenever I say â€œIâ€™m stressed.â€',
   },
   {
     icon: 'music',
     title: 'Kitchen DJ',
     description:
-      'You DJ breakfast like it’s a festival, brandishing the spatula mic during every chorus.',
+      'You DJ breakfast like itâ€™s a festival, brandishing the spatula mic during every chorus.',
   },
   {
     icon: 'compass',
@@ -153,7 +153,7 @@ const reasons = [
     icon: 'heart',
     title: 'Animal whisperer',
     description:
-      'Dogs, cats, crows—everyone trusts you. I’m still jealous of the street pup who got your last biscuit.',
+      'Dogs, cats, crowsâ€”everyone trusts you. Iâ€™m still jealous of the street pup who got your last biscuit.',
   },
   {
     icon: 'smile',
@@ -176,10 +176,10 @@ const reasons = [
 ];
 
 const letterParagraphs = [
-  'Sara, I can still replay 5 July like a favourite scene—the hallway buzz, your mustard kurta, the way time hiccupped when you looked up. Eleven days later on 16 July we finally sat across from each other, knocking over sugar sachets and mapping out imaginary road trips like we were already mid-journey.',
-  'Every 23 June since has been our checkpoint. We celebrate with polaroids, too-sweet cake, and the same whispered promise: keep choosing wonder. You keep it daily—whether we are slow-sipping filter coffee on the balcony, raiding bookstores, or racing the rain to Marine Drive.',
-  'I love the way you know every lyric before the chorus lands, how you stash emergency orange candy in every tote, how you hum when you read, and how you still text me cloud photos like it’s breaking news. You champion my wild ideas, edit my drafts, and somehow make spreadsheets and sunsets equally sacred.',
-  'As we count down to 27 November 2025, I am grateful for every hammock nap, firefly rooftop, and sleepy train we have shared—and for all the chapters ahead. I am madly proud of you, endlessly inspired by you, and forever in your corner.',
+  'Sara, I can still replay 5 July like a favourite sceneâ€”the hallway buzz, your mustard kurta, the way time hiccupped when you looked up. Eleven days later on 16 July we finally sat across from each other, knocking over sugar sachets and mapping out imaginary road trips like we were already mid-journey.',
+  'Every 23 June since has been our checkpoint. We celebrate with polaroids, too-sweet cake, and the same whispered promise: keep choosing wonder. You keep it dailyâ€”whether we are slow-sipping filter coffee on the balcony, raiding bookstores, or racing the rain to Marine Drive.',
+  'I love the way you know every lyric before the chorus lands, how you stash emergency orange candy in every tote, how you hum when you read, and how you still text me cloud photos like itâ€™s breaking news. You champion my wild ideas, edit my drafts, and somehow make spreadsheets and sunsets equally sacred.',
+  'As we count down to 27 November 2025, I am grateful for every hammock nap, firefly rooftop, and sleepy train we have sharedâ€”and for all the chapters ahead. I am madly proud of you, endlessly inspired by you, and forever in your corner.',
 ];
 
 const timelineEvents = [
@@ -234,7 +234,7 @@ const quizQuestions = [
     answer: 'voice',
   },
   {
-    prompt: 'Our shared superpower is…',
+    prompt: 'Our shared superpower isâ€¦',
     options: [
       { label: 'Finding the best chai stall', value: 'chai' },
       { label: 'Documenting sunsets', value: 'sunset' },
@@ -347,7 +347,7 @@ const App = () => (
         <div className="space-y-10">
           <SectionHeading
             eyebrow="Reasons"
-            title="Why you are everyone’s favorite plot twist"
+            title="Why you are everyoneâ€™s favorite plot twist"
             description="A very incomplete list of the reasons we adore you."
           />
           <ReasonsSection reasons={reasons} />
@@ -374,7 +374,7 @@ const App = () => (
           <SectionHeading
             eyebrow="Playlist"
             title="Songs that sound like us"
-            description="Drop your actual Spotify links anytime—cards open in a new tab."
+            description="Drop your actual Spotify links anytimeâ€”cards open in a new tab."
           />
           <PlaylistSection tracks={playlistTracks} />
         </div>
@@ -392,11 +392,12 @@ const App = () => (
       </SectionWrapper>
 
       <SectionWrapper id="letter">
-        <LetterSection paragraphs={letterParagraphs} signature="Always, Tarun" />
+        <LetterSection paragraphs={letterParagraphs} signature="Always, Rishi" />
       </SectionWrapper>
     </div>
   </div>
 );
 
 export default App;
+
 
